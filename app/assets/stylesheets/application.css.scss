@@ -23,7 +23,7 @@
 
 @mixin nav_link_hover {
   transition: 0.4s;
-  color: lighten(#222, 50%);
+  color: lighten(#fff, 50%);
   text-decoration: none;
 }
 
@@ -31,11 +31,16 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f9e8d4;
+  // background-color: #f9e8d4;
 }
 
 a {
-  color: darken(#e7e7e7, 70%);
+  color: darken(#fff, 70%);
+}
+
+a:hover{
+  text-decoration: none;
+  color: gold;
 }
 
 .jumbotron {
@@ -53,22 +58,27 @@ a {
 
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #D9534F;
+  background-color: #000;
+  border-bottom: 4px solid gold;
 
   .navbar-nav > li > a {
-    color: #FFF;
+    color: gold;
   }
 
   .navbar-link {
-    color: #FFF;
+    color: gold;
   }
 
   .navbar-brand {
-    color: #FFF;
+    color: gold;
     letter-spacing: 1.25px;
     font-size: 2.1em;
   }
-
+  .navbar-brand:hover,
+  .navbar-link:hover,
+  .navbar-nav > li > a:hover{
+    color: white;
+  }
 }
 
 /* Item styles */
